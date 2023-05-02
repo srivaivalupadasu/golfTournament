@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr >
+      <th>ID</th>
+      <th>Name</th>
+      <th>Nationality</th>
+      <th>Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let player of players">
+      <td>{{ player?.MSTID }}</td>
+      <td>{{ player?.First }} {{ player?.Last }}</td>
+      <td>{{ player?.Nationality }}</td>
+      <td>{{ player?.Score }}</td>
+    </tr>
+  </tbody>
+</table>
